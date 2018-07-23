@@ -69,9 +69,9 @@ const github = async() => {
     })
     response.map((res, avatar_url) =>{
         document.getElementById("githublist").innerHTML = document.getElementById("githublist").innerHTML +  
-        `<div class="d-flex justify-content-center"><div class="container card " style="width: 13rem;">
+        `<div class="d-flex justify-content-center"><div class="container card " style="width: 15rem;">
         <img src="${res.avatar_url} width="80px" height="140px"></img>
-        <div class="card-body"><h5 class="card-title ">${res.login}</h5><a href="${res.html_url}" class="btn btn-primary"> Go to profile</a></div></div></div>`
+        <div class="card-body"><h5 class="card-title ">${res.login}</h5><a href="${res.html_url}" class="btn btn-primary" target="_blank"> Go to profile</a></div></div></div>`
 
     })
 }
